@@ -4,7 +4,7 @@ A container for portable zsh
 
 # Run it
 
-    docker run -it -v $(which docker):$(which docker) -v /var/run/docker.sock:/var/run/docker.sock -v $HOME:$HOME -v $HOME/.ssh:$HOME/.ssh -e DATA=$HOME --hostname=$HOSTNAME jesse/zsh
+    docker run -it -v $(which docker):$(which docker) -v /var/run/docker.sock:/var/run/docker.sock -v $HOME:$HOME -v $HOME/.ssh:root/.ssh -e DATA=$HOME --hostname=$HOSTNAME jesse/zsh
 
 # Make your own
 
