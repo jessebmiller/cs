@@ -1,4 +1,4 @@
-# zshc (Z Shell Conatiner)
+# jesh (Jesse Shell)
 
 A container for portable zsh
 
