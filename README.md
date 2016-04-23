@@ -10,8 +10,8 @@ A container for portable zsh
 
 create your own zshrc, build from a Dockerfile as follows
 
-  FROM jesse/zsh
-  COPY zshrc /root/.zshrc
+   FROM jesse/zsh
+   COPY zshrc /root/.zshrc
 
 run as above.
 
