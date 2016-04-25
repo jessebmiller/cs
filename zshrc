@@ -84,4 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias emacs="docker run -it -v $DATA:/data jesse/emacs"
-alias home="cd $DATA"
+alias work="cd $DATA"
