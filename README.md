@@ -9,6 +9,7 @@ A container for portable zsh
         -v /var/run/docker.sock:/var/run/docker.sock \
         -v $HOME:$HOME \
         -v $HOME/.ssh:/root/.ssh \
+        -v $HOME/csconfig:/root/.config
         -e DATA=$HOME \
         --hostname=$HOSTNAME \
         jesse/shell
