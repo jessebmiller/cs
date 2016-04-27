@@ -12,6 +12,7 @@ A container for portable zsh
         -v $HOME/csconfig:/root/.config \
         -e DATA=$HOME \
         --hostname=$HOSTNAME \
+        --name shell
         jesse/shell
 
 # Make your own
