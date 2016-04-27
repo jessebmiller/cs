@@ -1,4 +1,4 @@
-# jesh (Jesse Shell)
+# My Shell
 
 A container for portable zsh
 
