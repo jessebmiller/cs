@@ -1,6 +1,7 @@
 # My Shell
 
 A container for portable zsh
+Influenced by https://github.com/jfrazelle
 
 # Run it
 
