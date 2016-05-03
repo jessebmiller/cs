@@ -4,15 +4,15 @@ A container for portable zsh. Influenced by https://github.com/jfrazelle
 
 # Run it
 
-    docker run -it \
+    docker run -it --rm \
         -v $(which docker):$(which docker) \
         -v /var/run/docker.sock:/var/run/docker.sock \
         -v $HOME:$HOME \
         -v $HOME/.ssh:/root/.ssh \
         -v $HOME/csconfig:/root/.config \
         -e DATA=$HOME \
-        --hostname=$HOSTNAME \
-        --name shell \
+        --net=host \
+        --detach-keys="ctrl-@" \
         jesse/shell
 
 # Make your own
