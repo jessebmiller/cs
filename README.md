@@ -27,7 +27,7 @@ run as above.
 # Notes
 
 With the docker socket being mounted in, any containers created inside this zsh
-container will be ~~sibling~~ containers. The volume paths will be from the host
+container will be __sibling__ containers. The volume paths will be from the host
 environment's context. This is why I mount `$HOME:$HOME` so the paths inside and
 outside will match.
 
