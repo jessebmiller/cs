@@ -83,5 +83,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias emacs="docker run -it -v $DATA:/data jesse/emacs"
+
 alias work="cd $DATA"
+
+alias rmi="docker rmi"
+
+alias emacs="docker run -it --detach-keys=\"ctrl-@\" -v $DATA:$(echo $DATA) jesse/emacs emacs $(pwd)"
+alias lein="docker run -it --detach-keys=\"ctrl-@\" -v $DATA:/data jesse/emacs lein"
+alias gcloud="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 gcloud"
+alias kubectl="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 kubectl"
+
+dclean () {
+    # based on https://github.com/jfrazelle/dotfiles
+    docker rm -v $(docker ps --filter status=exited -q 2>/dev/null) 2>/dev/null
+    docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
+}
