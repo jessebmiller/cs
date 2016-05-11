@@ -90,13 +90,13 @@ alias rmi="docker rmi"
 
 alias emacs="docker run -it --detach-keys=\"ctrl-@\" -v $DATA:$(echo $DATA) jesse/emacs emacs $(pwd)"
 alias lein="docker run -it --detach-keys=\"ctrl-@\" -v $DATA:/data jesse/emacs lein"
-alias gcloud="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 gcloud"
-alias kubectl="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 kubectl"
-alias k="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 kubectl"
-alias pod="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 kubectl get pod"
-alias rc="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 kubectl get rc"
-alias secret="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 kubectl get secret"
-alias pf="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud:0.0.1 kubectl port-forward"
+alias gcloud="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud gcloud"
+alias kubectl="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud kubectl"
+alias k="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud kubectl"
+alias pod="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud kubectl get pod"
+alias rc="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud kubectl get rc"
+alias secret="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud kubectl get secret"
+alias pf="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud kubectl port-forward"
 
 dclean () {
     # based on https://github.com/jfrazelle/dotfiles
