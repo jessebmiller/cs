@@ -89,7 +89,7 @@ alias work="cd $DATA"
 alias rmi="docker rmi"
 
 alias emacs="docker run -it --detach-keys=\"ctrl-@\" -v $DATA:$(echo $DATA) jesse/emacs emacs $(pwd)"
-alias lein="docker run -it --detach-keys=\"ctrl-@\" -v $DATA:/data jesse/emacs lein"
+alias lein="docker run -it --detach-keys=\"ctrl-@\" -v $DATA/csconfig/m2:/root/.m2 -v $DATA:$DATA -v `pwd`:/tmp jesse/emacs lein"
 alias gcloud="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud gcloud"
 alias kubectl="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud kubectl"
 alias k="docker run -it --rm -v $DATA/csconfig:/root/.config jesse/gcloud kubectl"
