@@ -11,9 +11,7 @@ docker run -it --rm \
        -v $HOME:$HOME \
        -v $HOME/.ssh:/root/.ssh \
        -v $HOME/csconfig:/root/.config \
-       # this is awkward, find a beter way to start in the home folder
        -e DATA=$HOME \
-       # Tell the container where to look for zshrc
        -e ZDOTDIR=$ZDOTDIR \
        --net=host \
        --detach-keys="ctrl-@" \
