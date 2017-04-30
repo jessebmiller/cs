@@ -8,6 +8,5 @@ run apk del git openssl ca-certificates
 
 env SHELL=/bin/zsh
 env HISTFILE=/root/.config/zsh/zsh_history
-env ZDOTDIR=/root/.config/jsh
 
 entrypoint /bin/zsh
